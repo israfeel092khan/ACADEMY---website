@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>DIPLOMA VERIFICATION WEBSITE – Diploma Verification</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
   <style>
@@ -371,10 +371,11 @@
   </style>
 </head>
 <body>
-
+  
 <!-- NAV -->
 <nav>
-  <div class="nav-logo">KHYBER AFGHAN ENGLISH LANGUAGE <span>AND COMPUTER Academy JAMRUD</span></div>
+  <img src="N1.jpg" style="size: 10px; width: 100px; padding-left: 0px; padding-right: 2%; width: 70px;">
+  <div class="nav-logo">KHYBER AFGHAN ENGLISH LANGUAGE <span>AND COMPUTER ACADEMY JAMRUD</span></div>
   <ul class="nav-links">
     <li><a href="#verify">Verify</a></li>
     <li><a href="#about">About</a></li>
@@ -444,7 +445,8 @@
         </div>
       </div>
       <div class="about-visual">
-        <div class="seal"><div class="seal-inner"><span>🎓</span><p>Certified</p></div></div>
+        <img src="N1.jpg" style="size: 400px; width: 200px;">
+        <div class="N1.jpg"><div class="N1.jpg"><span>🎓</span><p>Certified</p></div></div>
         <h3 style="font-family:'Playfair Display',serif; margin-top:1.5rem">Official Seal of Khyber Afghan academy</h3>
         <p style="color:var(--gray); font-size:0.9rem; margin-top:0.5rem">Every diploma carries our digital seal and a tamper-proof verification ID</p>
       </div>
@@ -477,7 +479,7 @@
       <div class="course-card"><div class="c-icon">📊</div><h4>MS Office</h4><p>Word, Excel, PowerPoint, Ms access</p></div>
       <div class="course-card"><div class="c-icon">🎨</div><h4>special conversation course</h4><p> Grammar, speaking</p></div>
       <div class="course-card"><div class="c-icon">📱</div><h4>tution class</h4><p> Frist class to FSc</p></div>
-      <div class="course-card"><div class="c-icon">🔐</div><h4>test guide</h4><p>about jons test, Mdcat tesy</p></div>
+      <div class="course-card"><div class="c-icon">🔐</div><h4>test guide</h4><p>about jons test, Mdcat test</p></div>
       <div class="course-card"><div class="c-icon">📈</div><h4>computer specialazition course</h4><p>Ms office, photoshope,coral draw</p></div>
     </div>
   </div>
@@ -499,7 +501,8 @@
       </div>
       <div style="display:flex;align-items:center;justify-content:center">
         <div style="text-align:center; padding:3rem; border:1px solid rgba(201,168,76,0.2); border-radius:16px; background:rgba(201,168,76,0.04)">
-          <div style="font-size:4rem">🏫</div>
+          <img src="N1.jpg" style="size: 400px; width: 200px;">
+          <div style="font-size:4rem"></div>
           <h3 style="font-family:'Playfair Display',serif; margin-top:1rem">KHYBER AFGHAN ENGLISH LANGUAGE AND COMPUTER ACADEMY JAMRUD</h3>
           <p style="color:var(--gray); margin-top:0.5rem; font-size:0.9rem">Empowering students since 2012</p>
           <div style="margin-top:1.5rem; padding:1rem; background:rgba(201,168,76,0.1); border-radius:8px; font-size:0.85rem; color:var(--gold)">
@@ -552,13 +555,46 @@
       status.className = 'result-status ok';
       status.innerHTML = `<span class="icon">✅</span> VERIFIED — This diploma is GENUINE`;
       grid.innerHTML = `
-        <div class="result-field"><label>Diploma ID</label><span>${student.id}</span></div>
-        <div class="result-field"><label>Student Name</label><span>${student.name}</span></div>
-        <div class="result-field"><label>Father's Name</label><span>${student.father}</span></div>
-        <div class="result-field"><label>Course</label><span>${student.course}</span></div>
-        <div class="result-field"><label>Grade</label><span>${student.grade}</span></div>
-        <div class="result-field"><label>Issue Date</label><span>${student.date}</span></div>
-      `;
+<div style="text-align:center; margin-bottom:20px;">
+    <img src="${student.photo}"
+         alt="${student.name}"
+         style="width:160px;
+                height:180px;
+                object-fit:cover;
+                border-radius:10px;
+                border:3px solid #c9a84c;">
+</div>
+
+<div class="result-field">
+    <label>Diploma ID</label>
+    <span>${student.id}</span>
+</div>
+
+<div class="result-field">
+    <label>Student Name</label>
+    <span>${student.name}</span>
+</div>
+
+<div class="result-field">
+    <label>Father's Name</label>
+    <span>${student.father}</span>
+</div>
+
+<div class="result-field">
+    <label>Course</label>
+    <span>${student.course}</span>
+</div>
+
+<div class="result-field">
+    <label>Grade</label>
+    <span>${student.grade}</span>
+</div>
+
+<div class="result-field">
+    <label>Issue Date</label>
+    <span>${student.date}</span>
+</div>
+`;
     } else {
       card.className = 'result-card fail';
       status.className = 'result-status bad';
