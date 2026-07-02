@@ -12,13 +12,14 @@ const STUDENTS_DATA = [
   // ── EXAMPLE STUDENTS (Delete these and add your real ones) ──
 
   {
-    id:     "427",
-    name:   "Israfeel khan",
-    father: "Javed khan",
-    course: "English language diploma",
-    grade:  "A+",
-    date:   "August 10, 2020"
-  },
+  id: "427",
+  name: "Israfeel Khan",
+  father: "Javed Khan",
+  course: "English language diploma",
+  grade: "A+",
+  date: "August 10, 2020",
+  photo: "image/student1.jpg"
+},
 
   {
     id:     "ACA-2024-0002",
@@ -26,7 +27,8 @@ const STUDENTS_DATA = [
     father: "noor Ahmed",
     course: "English language diploma",
     grade:  "A",
-    date:   "March 15, 2024"
+    date:   "March 15, 2024",
+    photo:  "images/student2.jpg"
   },
 
   {
